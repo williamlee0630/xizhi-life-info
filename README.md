@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 汐止生活資訊網站
 
-## Getting Started
+`xizhi-life-info` 是一個使用 Next.js App Router、JavaScript 與 Tailwind CSS 建立的地方型靜態內容網站。網站整理汐止交通、美食、景點與生活機能，並作為 GEO／AEO 研究樣本，用來觀察小型自建網站是否能透過清楚分類、FAQ、內部連結、摘要段落與結構化資料提升搜尋與 AI 摘要理解機會。
 
-First, run the development server:
+## 技術架構
+
+- Next.js App Router
+- JavaScript
+- Tailwind CSS
+- `src/app` 多頁式內容架構
+- 靜態資料檔與可重複使用元件
+- 每頁包含 metadata、H1、摘要、H2、FAQ、內部連結與 JSON-LD
+
+## 主要頁面
+
+- `/`：首頁與汐止生活資訊總覽
+- `/about-xizhi`：汐止位置、生活圈與居住特色
+- `/food`：汐止美食與日常用餐整理
+- `/transport`：汐止交通與通勤情境
+- `/attractions`：汐止景點與散步地點
+- `/living`：汐止生活機能與居住日常
+- `/faq`：全站常見問題
+
+## 研究紀錄
+
+研究檔案放在 `research/`：
+
+- `crawl-log-notes.md`：記錄 Googlebot、Bingbot、GPTBot、PerplexityBot、ClaudeBot 等爬蟲造訪情況
+- `ai-visibility-record.md`：記錄 AI 摘要或搜尋工具是否引用本站
+- `content-version-log.md`：記錄內容結構與 SEO/GEO/AEO 調整
+
+## 開發
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+開啟 `http://localhost:3000` 查看網站。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 部署前檢查
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+目前 `src/data/siteMeta.js`、`public/robots.txt` 與 `public/sitemap.xml` 使用 `https://xizhi-life-info.vercel.app` 作為站台網址。正式部署到其他網域時，請同步更新這三處，確保 canonical、sitemap 與 robots 指向正確網址。

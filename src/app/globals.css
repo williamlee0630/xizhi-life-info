@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f8f7;
+  --foreground: #1c1917;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
+html {
+  scroll-padding-top: 104px;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(236, 253, 245, 0.7), rgba(246, 248, 247, 0) 420px),
+    var(--background);
+  color: var(--foreground);
+  font-family: Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
+a {
+  text-underline-offset: 4px;
+}
