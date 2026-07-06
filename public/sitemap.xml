@@ -1,45 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>https://xizhi-life-info.vercel.app/</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xizhi-life-info.vercel.app/" />
   </url>
+
   <url>
     <loc>https://xizhi-life-info.vercel.app/about-xizhi</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/about-xizhi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xizhi-life-info.vercel.app/about-xizhi" />
   </url>
+
   <url>
     <loc>https://xizhi-life-info.vercel.app/food</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/food" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xizhi-life-info.vercel.app/food" />
   </url>
+
   <url>
     <loc>https://xizhi-life-info.vercel.app/transport</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/transport" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xizhi-life-info.vercel.app/transport" />
   </url>
+
   <url>
     <loc>https://xizhi-life-info.vercel.app/attractions</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/attractions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xizhi-life-info.vercel.app/attractions" />
   </url>
+
   <url>
     <loc>https://xizhi-life-info.vercel.app/living</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/living" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xizhi-life-info.vercel.app/living" />
   </url>
+
   <url>
     <loc>https://xizhi-life-info.vercel.app/faq</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xizhi-life-info.vercel.app/faq" />
   </url>
+
 </urlset>
