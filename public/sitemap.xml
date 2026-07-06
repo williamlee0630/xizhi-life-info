@@ -65,4 +65,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://xizhi-life-info.vercel.app/faq" />
   </url>
 
+  <url>
+    <loc>https://xizhi-life-info.vercel.app/llms.txt</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/llms.txt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xizhi-life-info.vercel.app/llms.txt" />
+  </url>
+
 </urlset>

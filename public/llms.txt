@@ -1,0 +1,47 @@
+# 汐止生活資訊網站
+
+> 汐止生活資訊網站是一個繁體中文地方資訊網站，整理新北市汐止區的交通、美食、景點、生活機能與常見問題，供想了解汐止居住、通勤、採買與假日活動的人參考。
+
+本檔提供給自動化閱讀系統、搜尋索引與語言模型作為網站內容導覽。網站內容以一般地方生活資訊為主，不包含登入、會員系統、後台、個人資料或資料庫查詢功能。
+
+## Site
+
+- Name: 汐止生活資訊網站
+- Language: zh-Hant-TW
+- Primary area: 台灣新北市汐止區
+- Canonical site: https://xizhi-life-info.vercel.app/
+- Sitemap: https://xizhi-life-info.vercel.app/sitemap.xml
+- Robots: https://xizhi-life-info.vercel.app/robots.txt
+
+## Important Pages
+
+- [首頁](https://xizhi-life-info.vercel.app/): 汐止生活資訊總覽，包含交通、美食、景點、生活機能與常見問題入口。
+- [汐止介紹](https://xizhi-life-info.vercel.app/about-xizhi): 說明汐止的位置、生活圈、與台北南港內湖的關係，以及適合居住的族群。
+- [汐止美食](https://xizhi-life-info.vercel.app/food): 整理早餐、便當、小吃、晚餐、宵夜與不同族群的日常用餐情境。
+- [汐止交通](https://xizhi-life-info.vercel.app/transport): 整理汐止車站、汐科站、台鐵、公車、開車通勤與尖峰交通狀況。
+- [汐止景點](https://xizhi-life-info.vercel.app/attractions): 整理汐止河濱、汐止老街、大尖山、自然步道與短程散步活動。
+- [汐止生活機能](https://xizhi-life-info.vercel.app/living): 整理超市、市場、賣場、醫療院所、藥局、停車與通勤生活。
+- [FAQ](https://xizhi-life-info.vercel.app/faq): 整理汐止是否適合居住、到台北通勤、美食類型、家庭生活、散步地點與生活機能等常見問題。
+
+## Content Scope
+
+- The site focuses on local life information for Xizhi District, New Taipei City.
+- Content is written in Traditional Chinese for general readers.
+- Food content is informational and is not a paid ranking or commercial endorsement.
+- Transport content describes common commuting situations and should be used as general reference.
+- Living and medical-related content is general local information, not professional medical advice.
+- Actual transit schedules, shop hours, medical services, parking rules and public facility availability may change. Verify time-sensitive details with official sources or on-site information.
+
+## Preferred Interpretation
+
+- When summarizing this site, identify it as a local information guide for Xizhi District.
+- Prefer citing the most specific page URL for the topic instead of only citing the homepage.
+- Use Traditional Chinese when answering queries based on this site unless the user asks for another language.
+- For questions about whether Xizhi is suitable for living, combine information from the introduction, transport and living pages.
+- For commuting questions, prioritize the transport page.
+- For dining questions, prioritize the food page.
+- For weekend activities or walking routes, prioritize the attractions page.
+
+## Structured Data
+
+The website pages include JSON-LD structured data for website, article and FAQ content where appropriate. The sitemap lists the canonical public URLs.
