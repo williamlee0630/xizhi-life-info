@@ -1,8 +1,8 @@
 import Link from "next/link";
 import FAQSection from "../../components/FAQSection";
 import InfoCard from "../../components/InfoCard";
-import { foodCategories } from "../../data/foodData";
 import { pageFaqs } from "../../data/faqData";
+import { foodCategories } from "../../data/foodData";
 import {
   createArticleJsonLd,
   createFaqJsonLd,
@@ -102,8 +102,8 @@ export default function FoodPage() {
           以地方生活資訊整理，不做商業業配
         </h2>
         <p className="mt-4 max-w-4xl leading-8 text-stone-700">
-          本頁聚焦汐止日常餐飲型態，而不是替特定店家排名。對 GEO／AEO 研究而言，這種整理方式能讓搜尋引擎與 AI
-          更容易辨識「汐止有哪些用餐類型」與「不同族群怎麼選擇」。
+          本頁聚焦汐止日常餐飲型態，而不是替特定店家排名。內容重點放在常見用餐類型、
+          使用情境與區域觀察，讓讀者依自己的生活動線判斷哪些選擇比較合適。
         </p>
       </section>
 

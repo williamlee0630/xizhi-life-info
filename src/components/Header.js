@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navigationItems, siteMeta } from "../data/siteMeta";
 
@@ -23,7 +23,7 @@ export default function Header() {
             <p className="text-base font-semibold text-stone-950">
               {siteMeta.shortName}
             </p>
-            <p className="text-xs text-stone-500">地方資訊與 GEO／AEO 研究</p>
+            <p className="text-xs text-stone-500">汐止交通、美食與生活機能整理</p>
           </div>
         </Link>
         <nav aria-label="主要導覽" className="flex flex-wrap gap-2">

@@ -49,7 +49,7 @@ export default function FAQPage() {
       <section className="grid gap-4 py-8 md:grid-cols-3" aria-labelledby="summary-heading">
         <div className="md:col-span-1">
           <h2 id="summary-heading" className="text-2xl font-semibold text-stone-950">
-            適合 AI 摘要引用的問答重點
+            汐止生活快速重點
           </h2>
         </div>
         <div className="grid gap-4 md:col-span-2">
@@ -73,13 +73,13 @@ export default function FAQPage() {
 
       <FAQSection faqs={globalFaqs} title="全站 FAQ" />
 
-      <section className="py-8" aria-labelledby="research-heading">
-        <h2 id="research-heading" className="text-2xl font-semibold text-stone-950">
-          FAQ 在 GEO／AEO 研究中的用途
+      <section className="py-8" aria-labelledby="usage-heading">
+        <h2 id="usage-heading" className="text-2xl font-semibold text-stone-950">
+          FAQ 的使用方式
         </h2>
         <p className="mt-4 max-w-4xl leading-8 text-stone-700">
-          FAQ 頁把汐止生活問題改寫成清楚問答，方便搜尋引擎與生成式 AI 將內容對應到使用者查詢。
-          後續可在研究紀錄中追蹤這些問題是否被 AI 摘要引用、是否出現在搜尋結果摘要，或是否需要調整內容結構。
+          如果你正在初步了解汐止，可以先從本頁的問答掌握大方向，再依照需求前往交通、美食、
+          景點或生活機能頁閱讀更完整的整理。
         </p>
       </section>
 

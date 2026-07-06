@@ -8,11 +8,11 @@ export default function Footer() {
         <div className="space-y-3">
           <p className="text-lg font-semibold">{siteMeta.name}</p>
           <p className="max-w-2xl text-sm leading-7 text-stone-300">
-            本站以靜態內容整理汐止交通、美食、景點與生活機能，並作為觀察
-            GEO／AEO、FAQ、內部連結與結構化資料效果的研究樣本。
+            本站整理汐止交通、美食、景點與生活機能，提供居住評估、日常採買、
+            通勤安排與假日散步的地方資訊參考。
           </p>
           <p className="text-xs leading-6 text-stone-400">
-            內容以地方生活資訊與研究紀錄為主，不含登入、會員、後台或資料庫功能。
+            內容以靜態地方資訊為主，不含登入、會員、後台或資料庫功能。
           </p>
         </div>
         <div>

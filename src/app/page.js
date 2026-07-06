@@ -10,7 +10,7 @@ import {
 } from "../data/siteMeta";
 
 const summary =
-  "汐止生活資訊網站整理汐止的交通、美食、景點與生活機能，提供給想了解汐止居住、通勤與日常活動的人參考，也作為 GEO／AEO 研究中觀察小型地方網站被搜尋與 AI 摘要理解的靜態內容樣本。";
+  "汐止生活資訊網站整理汐止交通、美食、景點與生活機能，提供想了解汐止居住、通勤與日常活動的人參考。內容以清楚分類與常見問題呈現，方便快速找到與生活決策相關的資訊。";
 
 const categoryCards = [
   {
@@ -53,7 +53,7 @@ const categoryCards = [
 export const metadata = {
   title: "汐止生活資訊整理",
   description:
-    "汐止生活資訊網站首頁，整理汐止交通、美食、景點、生活機能與常見問題，作為 GEO／AEO 地方內容研究樣本。",
+    "汐止生活資訊網站首頁，整理汐止交通、美食、景點、生活機能與常見問題。",
   alternates: {
     canonical: "/",
   },
@@ -80,7 +80,7 @@ export default function HomePage() {
       <section className="grid gap-8 py-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
         <div className="space-y-6">
           <p className="text-sm font-semibold text-emerald-700">
-            地方生活資訊與 GEO／AEO 研究樣本
+            汐止地方生活資訊
           </p>
           <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-stone-950 sm:text-5xl">
             汐止生活資訊網站
@@ -103,7 +103,7 @@ export default function HomePage() {
         </div>
         <div className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-semibold text-stone-950">
-            適合 AI 摘要理解的重點整理
+            快速認識汐止的生活重點
           </h2>
           <ul className="mt-4 space-y-3 text-sm leading-7 text-stone-700">
             <li>汐止位於新北市東側，生活圈與台北南港、內湖、基隆方向連動密切。</li>
@@ -121,7 +121,7 @@ export default function HomePage() {
             主要分類入口
           </h2>
           <p className="max-w-3xl text-sm leading-7 text-stone-600">
-            每個分類頁都整理摘要、主題段落、FAQ 與內部連結，方便搜尋引擎與生成式 AI 判讀頁面主題。
+            每個分類頁都整理摘要、主題段落、常見問題與站內延伸閱讀，方便依照生活需求快速查找。
           </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
@@ -131,22 +131,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="grid gap-4 py-8 md:grid-cols-3" aria-labelledby="research-heading">
+      <section className="grid gap-4 py-8 md:grid-cols-3" aria-labelledby="guide-heading">
         <div className="md:col-span-1">
-          <p className="text-sm font-semibold text-emerald-700">Research</p>
-          <h2 id="research-heading" className="mt-2 text-2xl font-semibold text-stone-950">
-            研究觀察方向
+          <p className="text-sm font-semibold text-emerald-700">Guide</p>
+          <h2 id="guide-heading" className="mt-2 text-2xl font-semibold text-stone-950">
+            怎麼使用本站
           </h2>
         </div>
         <div className="grid gap-4 md:col-span-2">
           <InfoCard
-            title="內容分類是否清楚"
-            description="觀察多頁式架構、標題層級與分類入口是否能讓搜尋系統理解汐止生活主題。"
+            title="先看通勤與生活圈"
+            description="如果正在評估居住，可先閱讀汐止介紹與交通頁，確認每日往返台北、南港、內湖或基隆的動線。"
             accent="emerald"
           />
           <InfoCard
-            title="FAQ 是否利於回答型搜尋"
-            description="全站與單頁 FAQ 以問答形式整理汐止居住、交通與生活機能，方便後續追蹤摘要引用情況。"
+            title="再看吃飯與採買"
+            description="美食與生活機能頁整理早餐、便當、市場、超市、醫療藥局與停車等日常需求。"
             accent="sky"
           />
         </div>

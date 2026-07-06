@@ -2,11 +2,11 @@ export const siteMeta = {
   name: "汐止生活資訊網站",
   shortName: "汐止生活資訊",
   description:
-    "整理汐止交通、美食、景點與生活機能的地方型內容網站，用於觀察小型靜態網站在搜尋與 AI 摘要中的可見性。",
+    "整理汐止交通、美食、景點與生活機能的地方型資訊網站，提供居住、通勤、採買與假日活動的實用參考。",
   siteUrl: "https://xizhi-life-info.vercel.app",
   author: {
-    name: "xizhi-life-info research project",
-    type: "ResearchProject",
+    name: "汐止生活資訊編輯",
+    type: "Organization",
   },
   keywords: [
     "汐止生活資訊",
@@ -17,8 +17,6 @@ export const siteMeta = {
     "汐止適合居住嗎",
     "汐止到台北通勤",
     "地方資訊網站",
-    "GEO 研究",
-    "AEO 研究",
   ],
 };
 

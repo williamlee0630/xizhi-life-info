@@ -1,6 +1,6 @@
 # 汐止生活資訊網站
 
-`xizhi-life-info` 是一個使用 Next.js App Router、JavaScript 與 Tailwind CSS 建立的地方型靜態內容網站。網站整理汐止交通、美食、景點與生活機能，並作為 GEO／AEO 研究樣本，用來觀察小型自建網站是否能透過清楚分類、FAQ、內部連結、摘要段落與結構化資料提升搜尋與 AI 摘要理解機會。
+`xizhi-life-info` 是一個使用 Next.js App Router、JavaScript 與 Tailwind CSS 建立的地方型靜態內容網站。網站整理汐止交通、美食、景點與生活機能，提供居住評估、通勤安排、日常採買與假日活動的資訊參考。
 
 ## 技術架構
 
@@ -21,13 +21,9 @@
 - `/living`：汐止生活機能與居住日常
 - `/faq`：全站常見問題
 
-## 研究紀錄
+## 維護紀錄
 
-研究檔案放在 `research/`：
-
-- `crawl-log-notes.md`：記錄 Googlebot、Bingbot、GPTBot、PerplexityBot、ClaudeBot 等爬蟲造訪情況
-- `ai-visibility-record.md`：記錄 AI 摘要或搜尋工具是否引用本站
-- `content-version-log.md`：記錄內容結構與 SEO/GEO/AEO 調整
+維護檔案放在 `research/`，用來記錄內容版本、爬取狀態與後續觀察結果。這些檔案不是網站前台頁面。
 
 ## 開發
 
