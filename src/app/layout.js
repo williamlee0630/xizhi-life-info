@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/next-script-for-ga -- Google verification needs the raw gtag snippet in head. */
 import Footer from "../components/Footer";
-import GoogleAnalyticsHead from "../components/GoogleAnalyticsHead";
 import Header from "../components/Header";
 import { serializeJsonLd, siteMeta } from "../data/siteMeta";
 import "./globals.css";
@@ -44,8 +44,23 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="zh-Hant-TW">
+      <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-N4LN1KPP5E"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-N4LN1KPP5E');
+            `,
+          }}
+        />
+      </head>
       <body className="flex min-h-screen flex-col">
-        <GoogleAnalyticsHead />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
