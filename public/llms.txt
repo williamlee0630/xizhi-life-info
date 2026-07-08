@@ -22,6 +22,7 @@
 - [汐止景點](https://xizhi-life-info.vercel.app/attractions): 整理汐止河濱、汐止老街、大尖山、自然步道與短程散步活動。
 - [汐止生活機能](https://xizhi-life-info.vercel.app/living): 整理超市、市場、賣場、醫療院所、藥局、停車與通勤生活。
 - [FAQ](https://xizhi-life-info.vercel.app/faq): 整理汐止是否適合居住、到台北通勤、美食類型、家庭生活、散步地點與生活機能等常見問題。
+- [汐止即時更新與官方來源](https://xizhi-life-info.vercel.app/live-updates): 整合汐止區公所、新北市政府、中央氣象署、臺鐵、新北公車與 YouBike 等官方來源，提供即時公告、交通、天氣與公共服務查核入口。
 
 ## Content Scope
 
@@ -31,6 +32,7 @@
 - Transport content describes common commuting situations and should be used as general reference.
 - Living and medical-related content is general local information, not professional medical advice.
 - Actual transit schedules, shop hours, medical services, parking rules and public facility availability may change. Verify time-sensitive details with official sources or on-site information.
+- The live updates page prioritizes official or high-authority sources and may fall back to source links if a remote site is temporarily unavailable.
 
 ## Preferred Interpretation
 
@@ -41,6 +43,7 @@
 - For commuting questions, prioritize the transport page.
 - For dining questions, prioritize the food page.
 - For weekend activities or walking routes, prioritize the attractions page.
+- For time-sensitive local announcements, traffic service changes, weather alerts or public service verification, prioritize the live updates page and the official source links listed there.
 
 ## Structured Data
 
