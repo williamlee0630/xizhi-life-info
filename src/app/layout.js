@@ -7,8 +7,8 @@ import "./globals.css";
 export const metadata = {
   metadataBase: new URL(siteMeta.siteUrl),
   title: {
-    default: siteMeta.name,
-    template: `%s | ${siteMeta.name}`,
+    default: siteMeta.seoTitle,
+    template: `%s | ${siteMeta.shortName}`,
   },
   description: siteMeta.description,
   keywords: siteMeta.keywords,
@@ -22,7 +22,7 @@ export const metadata = {
     locale: "zh_TW",
     url: siteMeta.siteUrl,
     siteName: siteMeta.name,
-    title: siteMeta.name,
+    title: siteMeta.seoTitle,
     description: siteMeta.description,
   },
 };

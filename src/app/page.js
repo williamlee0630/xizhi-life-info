@@ -9,8 +9,8 @@ import {
   siteMeta,
 } from "../data/siteMeta";
 
-const summary =
-  "汐止生活資訊網站整理汐止交通、美食、景點與生活機能，提供想了解汐止居住、通勤與日常活動的人參考。內容以清楚分類與常見問題呈現，方便快速找到與生活決策相關的資訊。";
+const pageTitle = siteMeta.seoTitle;
+const summary = siteMeta.description;
 
 const categoryCards = [
   {
@@ -51,30 +51,38 @@ const categoryCards = [
 ];
 
 export const metadata = {
-  title: "汐止生活資訊整理",
-  description:
-    "汐止生活資訊網站首頁，整理汐止交通、美食、景點、生活機能與常見問題。",
+  title: {
+    absolute: pageTitle,
+  },
+  description: summary,
+  openGraph: {
+    title: pageTitle,
+    description: summary,
+    url: "/",
+  },
   alternates: {
     canonical: "/",
   },
 };
 
 export default function HomePage() {
-  const jsonLd = [
-    createArticleJsonLd({
-      title: "汐止生活資訊整理",
-      description: summary,
-      path: "/",
-      section: "首頁",
-    }),
-    createFaqJsonLd(pageFaqs.home, "/"),
-  ];
+  const articleJsonLd = createArticleJsonLd({
+    title: pageTitle,
+    description: summary,
+    path: "/",
+    section: "首頁",
+  });
+  const faqJsonLd = createFaqJsonLd(pageFaqs.home, "/");
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqJsonLd) }}
       />
 
       <section className="grid gap-8 py-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
