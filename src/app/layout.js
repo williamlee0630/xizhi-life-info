@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/next-script-for-ga -- Google verification needs the raw gtag snippet in head. */
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import LiveInfoTicker from "../components/LiveInfoTicker";
 import { serializeJsonLd, siteMeta } from "../data/siteMeta";
 import "./globals.css";
 
@@ -62,6 +63,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="flex min-h-screen flex-col">
         <Header />
+        <LiveInfoTicker />
         <main className="flex-1">{children}</main>
         <Footer />
         <script

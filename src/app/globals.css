@@ -27,3 +27,37 @@ body {
 a {
   text-underline-offset: 4px;
 }
+
+.xizhi-marquee-track {
+  display: inline-flex;
+  min-width: max-content;
+  animation: xizhi-marquee 44s linear infinite;
+  will-change: transform;
+}
+
+.xizhi-marquee-link:hover .xizhi-marquee-track,
+.xizhi-marquee-link:focus-visible .xizhi-marquee-track {
+  animation-play-state: paused;
+}
+
+.xizhi-marquee-copy {
+  display: inline-block;
+  padding-right: 3rem;
+}
+
+@keyframes xizhi-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .xizhi-marquee-track {
+    animation: none;
+    transform: none;
+  }
+}
