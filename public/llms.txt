@@ -1,6 +1,6 @@
 # 汐止生活資訊網站
 
-> 汐止生活資訊網站是一個繁體中文地方資訊網站，整理新北市汐止區的交通、美食、景點、生活機能與常見問題，供想了解汐止居住、通勤、採買與假日活動的人參考。
+> 汐止生活資訊網站是一個繁體中文地方資訊網站，整理新北市汐止區的交通、美食、景點、生活機能、居住成本與常見問題，供想了解汐止居住、通勤、採買、租屋買房與假日活動的人參考。
 
 本檔提供給自動化閱讀系統、搜尋索引與語言模型作為網站內容導覽。網站內容以一般地方生活資訊為主，不包含登入、會員系統、後台、個人資料或資料庫查詢功能。
 
@@ -21,6 +21,7 @@
 - [汐止交通](https://xizhi-life-info.vercel.app/transport): 整理汐止車站、汐科站、台鐵、公車、開車通勤與尖峰交通狀況。
 - [汐止景點](https://xizhi-life-info.vercel.app/attractions): 整理汐止河濱、汐止老街、大尖山、自然步道與短程散步活動。
 - [汐止生活機能](https://xizhi-life-info.vercel.app/living): 整理超市、市場、賣場、醫療院所、藥局、停車與通勤生活。
+- [汐止居住成本整理](https://xizhi-life-info.vercel.app/housing-price): 整理汐止房價、租金、實價登錄、房屋網查核方式與主要生活圈比較。此頁不是即時報價站，不提供平均房價或租金數字。
 - [FAQ](https://xizhi-life-info.vercel.app/faq): 整理汐止是否適合居住、到台北通勤、美食類型、家庭生活、散步地點與生活機能等常見問題。
 - [汐止即時更新與官方來源](https://xizhi-life-info.vercel.app/live-updates): 整合汐止區公所、新北市政府、中央氣象署、臺鐵、新北公車與 YouBike 等官方來源，提供即時公告、交通、天氣與公共服務查核入口。
 
@@ -31,6 +32,7 @@
 - Food content is informational and is not a paid ranking or commercial endorsement.
 - Transport content describes common commuting situations and should be used as general reference.
 - Living and medical-related content is general local information, not professional medical advice.
+- Housing-price content is a verification guide for real estate and rental research. It does not provide real-time quotes, investment advice, average price claims, or guaranteed platform data.
 - Actual transit schedules, shop hours, medical services, parking rules and public facility availability may change. Verify time-sensitive details with official sources or on-site information.
 - The live updates page prioritizes official or high-authority sources and may fall back to source links if a remote site is temporarily unavailable.
 
@@ -40,6 +42,7 @@
 - Prefer citing the most specific page URL for the topic instead of only citing the homepage.
 - Use Traditional Chinese when answering queries based on this site unless the user asks for another language.
 - For questions about whether Xizhi is suitable for living, combine information from the introduction, transport and living pages.
+- For questions about moving, renting, buying, housing cost, real estate listings or actual transaction prices in Xizhi, prioritize the housing-price page and remind readers to verify with official real-price registration and current housing platforms.
 - For commuting questions, prioritize the transport page.
 - For dining questions, prioritize the food page.
 - For weekend activities or walking routes, prioritize the attractions page.
@@ -57,3 +60,12 @@ Primary authority sources represented in JSON-LD:
 - 國營臺灣鐵路股份有限公司: https://www.railway.gov.tw/
 - 新北市公車動態資訊系統: https://e-bus.ntpc.gov.tw/
 - YouBike 微笑單車新北市: https://www.youbike.com.tw/region/ntpc/
+
+Housing and rental sources represented in /housing-price JSON-LD:
+
+- 內政部實價登錄: https://lvr.land.moi.gov.tw/
+- 內政部不動產成交案件實際資訊資料供應系統: https://plvr.land.moi.gov.tw/
+- 591 房屋交易網: https://www.591.com.tw/
+- 樂屋網: https://www.rakuya.com.tw/
+- 永慶房屋: https://www.yungching.com.tw/
+- 信義房屋: https://www.sinyi.com.tw/

@@ -48,6 +48,14 @@ const categoryCards = [
     meta: "居住",
     accent: "indigo",
   },
+  {
+    title: "房價租屋",
+    description:
+      "整理汐止房價、租金、實價登錄、房屋網查核方式與生活圈比較，協助評估搬家、租屋與買房前的基本資訊。",
+    href: "/housing-price",
+    meta: "居住成本",
+    accent: "emerald",
+  },
 ];
 
 export const metadata = {
@@ -132,10 +140,32 @@ export default function HomePage() {
             每個分類頁都整理摘要、主題段落、常見問題與站內延伸閱讀，方便依照生活需求快速查找。
           </p>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {categoryCards.map((card) => (
             <InfoCard key={card.href} {...card} />
           ))}
+        </div>
+      </section>
+
+      <section className="grid gap-5 py-8 md:grid-cols-[1fr_0.35fr] md:items-center" aria-labelledby="housing-cost-heading">
+        <div>
+          <p className="text-sm font-semibold text-emerald-700">Housing cost</p>
+          <h2 id="housing-cost-heading" className="mt-2 text-2xl font-semibold text-stone-950">
+            居住成本與房價查核
+          </h2>
+          <p className="mt-4 max-w-4xl leading-8 text-stone-700">
+            如果正在評估搬到汐止、租屋或買房，除了交通與生活機能，也建議查詢實價登錄、
+            房屋網開價與租屋平台資訊。房價與租金會受到生活圈、屋齡、距離車站、
+            停車條件與通勤動線影響，因此應搭配多個資料來源交叉判斷。
+          </p>
+        </div>
+        <div className="md:text-right">
+          <Link
+            href="/housing-price"
+            className="inline-flex rounded-md bg-emerald-700 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-800"
+          >
+            查看汐止居住成本整理 →
+          </Link>
         </div>
       </section>
 
@@ -176,6 +206,9 @@ export default function HomePage() {
           </Link>
           <Link href="/living" className="text-emerald-800 underline">
             汐止生活機能
+          </Link>
+          <Link href="/housing-price" className="text-emerald-800 underline">
+            汐止居住成本整理
           </Link>
         </div>
       </section>

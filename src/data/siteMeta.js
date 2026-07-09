@@ -17,6 +17,9 @@ export const siteMeta = {
     "汐止美食",
     "汐止景點",
     "汐止生活機能",
+    "汐止房價",
+    "汐止租屋",
+    "汐止居住成本",
     "汐止適合居住嗎",
     "汐止到台北通勤",
     "地方資訊網站",
@@ -30,6 +33,7 @@ export const navigationItems = [
   { label: "交通", href: "/transport" },
   { label: "景點", href: "/attractions" },
   { label: "生活機能", href: "/living" },
+  { label: "房價租屋", href: "/housing-price" },
   { label: "FAQ", href: "/faq" },
 ];
 
@@ -40,6 +44,7 @@ export const siteRoutes = [
   { path: "/transport", priority: "0.8", changefreq: "monthly" },
   { path: "/attractions", priority: "0.7", changefreq: "monthly" },
   { path: "/living", priority: "0.8", changefreq: "monthly" },
+  { path: "/housing-price", priority: "0.8", changefreq: "monthly" },
   { path: "/faq", priority: "0.7", changefreq: "monthly" },
 ];
 
@@ -142,8 +147,11 @@ export function createArticleJsonLd({
   path,
   section,
   sourceIds = authoritySourceSets.all,
+  mentions,
+  datePublished = "2026-07-06",
+  dateModified = "2026-07-06",
 }) {
-  const sourceMentions = createAuthoritySourceMentions(sourceIds);
+  const sourceMentions = mentions || createAuthoritySourceMentions(sourceIds);
 
   return {
     "@context": "https://schema.org",
@@ -152,8 +160,8 @@ export function createArticleJsonLd({
     description,
     articleSection: section,
     inLanguage: "zh-Hant-TW",
-    datePublished: "2026-07-06",
-    dateModified: "2026-07-06",
+    datePublished,
+    dateModified,
     about: createXizhiPlaceJsonLd(),
     mentions: sourceMentions,
     citation: sourceMentions.map((source) => source.url),

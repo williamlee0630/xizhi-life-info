@@ -57,6 +57,15 @@
   </url>
 
   <url>
+    <loc>https://xizhi-life-info.vercel.app/housing-price</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/housing-price" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xizhi-life-info.vercel.app/housing-price" />
+  </url>
+
+  <url>
     <loc>https://xizhi-life-info.vercel.app/faq</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
