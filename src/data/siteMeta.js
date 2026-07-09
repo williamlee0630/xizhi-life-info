@@ -1,3 +1,5 @@
+import { authoritySources } from "./liveUpdates";
+
 export const siteMeta = {
   name: "汐止生活資訊網站",
   shortName: "汐止生活資訊",
@@ -49,6 +51,75 @@ export function serializeJsonLd(data) {
   return JSON.stringify(data).replace(/</g, "\\u003c");
 }
 
+export const authoritySourceSets = {
+  all: authoritySources.map((source) => source.id),
+  local: ["xizhi-office", "ntpc", "cwa"],
+  transport: ["tra", "ntpc-bus", "youbike", "cwa"],
+  leisure: ["xizhi-office", "ntpc", "cwa", "tra", "ntpc-bus"],
+};
+
+const authoritySourceById = new Map(
+  authoritySources.map((source) => [source.id, source]),
+);
+
+function getAuthoritySources(sourceIds = authoritySourceSets.all) {
+  return sourceIds
+    .map((sourceId) => authoritySourceById.get(sourceId))
+    .filter(Boolean);
+}
+
+export function createXizhiPlaceJsonLd() {
+  return {
+    "@type": "AdministrativeArea",
+    name: "新北市汐止區",
+    alternateName: ["汐止", "Xizhi District"],
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "汐止區",
+      addressRegion: "新北市",
+      addressCountry: "TW",
+    },
+    sameAs: [
+      "https://www.xizhi.ntpc.gov.tw/",
+      "https://www.ntpc.gov.tw/",
+    ],
+  };
+}
+
+export function createAuthoritySourceMentions(sourceIds = authoritySourceSets.all) {
+  return getAuthoritySources(sourceIds).map((source) => ({
+    "@type": "Organization",
+    "@id": `${source.url}#organization`,
+    name: source.name,
+    alternateName: source.shortName,
+    url: source.url,
+    description: source.description,
+    sameAs: [source.url],
+  }));
+}
+
+export function createAuthoritySourceItemListJsonLd({
+  name,
+  description,
+  path,
+  sourceIds = authoritySourceSets.all,
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    description,
+    url: getAbsoluteUrl(path),
+    itemListElement: createAuthoritySourceMentions(sourceIds).map(
+      (source, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: source,
+      }),
+    ),
+  };
+}
+
 export function createFaqJsonLd(faqs, path) {
   return {
     "@context": "https://schema.org",
@@ -65,7 +136,15 @@ export function createFaqJsonLd(faqs, path) {
   };
 }
 
-export function createArticleJsonLd({ title, description, path, section }) {
+export function createArticleJsonLd({
+  title,
+  description,
+  path,
+  section,
+  sourceIds = authoritySourceSets.all,
+}) {
+  const sourceMentions = createAuthoritySourceMentions(sourceIds);
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -75,6 +154,9 @@ export function createArticleJsonLd({ title, description, path, section }) {
     inLanguage: "zh-Hant-TW",
     datePublished: "2026-07-06",
     dateModified: "2026-07-06",
+    about: createXizhiPlaceJsonLd(),
+    mentions: sourceMentions,
+    citation: sourceMentions.map((source) => source.url),
     author: {
       "@type": siteMeta.author.type,
       name: siteMeta.author.name,

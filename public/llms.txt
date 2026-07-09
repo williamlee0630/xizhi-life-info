@@ -47,4 +47,13 @@
 
 ## Structured Data
 
-The website pages include JSON-LD structured data for website, article and FAQ content where appropriate. The sitemap lists the canonical public URLs.
+The website pages include JSON-LD structured data for website, article and FAQ content where appropriate. Article JSON-LD includes `about`, `mentions`, `sameAs` and `citation` links to high-authority official sources when relevant. The sitemap lists the canonical public URLs.
+
+Primary authority sources represented in JSON-LD:
+
+- 新北市汐止區公所: https://www.xizhi.ntpc.gov.tw/
+- 新北市政府: https://www.ntpc.gov.tw/
+- 交通部中央氣象署: https://www.cwa.gov.tw/
+- 國營臺灣鐵路股份有限公司: https://www.railway.gov.tw/
+- 新北市公車動態資訊系統: https://e-bus.ntpc.gov.tw/
+- YouBike 微笑單車新北市: https://www.youbike.com.tw/region/ntpc/

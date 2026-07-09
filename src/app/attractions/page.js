@@ -4,6 +4,7 @@ import InfoCard from "../../components/InfoCard";
 import { attractionData } from "../../data/attractionData";
 import { pageFaqs } from "../../data/faqData";
 import {
+  authoritySourceSets,
   createArticleJsonLd,
   createFaqJsonLd,
   serializeJsonLd,
@@ -28,6 +29,7 @@ export default function AttractionsPage() {
       description: summary,
       path: "/attractions",
       section: "汐止景點",
+      sourceIds: authoritySourceSets.leisure,
     }),
     createFaqJsonLd(pageFaqs.attractions, "/attractions"),
   ];

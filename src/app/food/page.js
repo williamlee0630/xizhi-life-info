@@ -4,6 +4,7 @@ import InfoCard from "../../components/InfoCard";
 import { pageFaqs } from "../../data/faqData";
 import { foodCategories } from "../../data/foodData";
 import {
+  authoritySourceSets,
   createArticleJsonLd,
   createFaqJsonLd,
   serializeJsonLd,
@@ -28,6 +29,7 @@ export default function FoodPage() {
       description: summary,
       path: "/food",
       section: "汐止美食",
+      sourceIds: authoritySourceSets.local,
     }),
     createFaqJsonLd(pageFaqs.food, "/food"),
   ];

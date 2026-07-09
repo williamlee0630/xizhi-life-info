@@ -3,6 +3,7 @@ import FAQSection from "../../components/FAQSection";
 import InfoCard from "../../components/InfoCard";
 import { pageFaqs } from "../../data/faqData";
 import {
+  authoritySourceSets,
   createArticleJsonLd,
   createFaqJsonLd,
   serializeJsonLd,
@@ -27,6 +28,7 @@ export default function AboutXizhiPage() {
       description: summary,
       path: "/about-xizhi",
       section: "汐止介紹",
+      sourceIds: authoritySourceSets.local,
     }),
     createFaqJsonLd(pageFaqs.about, "/about-xizhi"),
   ];

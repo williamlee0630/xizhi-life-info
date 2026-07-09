@@ -4,6 +4,7 @@ import InfoCard from "../../components/InfoCard";
 import { pageFaqs } from "../../data/faqData";
 import { livingData } from "../../data/livingData";
 import {
+  authoritySourceSets,
   createArticleJsonLd,
   createFaqJsonLd,
   serializeJsonLd,
@@ -28,6 +29,7 @@ export default function LivingPage() {
       description: summary,
       path: "/living",
       section: "汐止生活機能",
+      sourceIds: authoritySourceSets.all,
     }),
     createFaqJsonLd(pageFaqs.living, "/living"),
   ];

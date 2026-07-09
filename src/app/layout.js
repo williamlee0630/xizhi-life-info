@@ -2,7 +2,12 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import LiveInfoTicker from "../components/LiveInfoTicker";
-import { serializeJsonLd, siteMeta } from "../data/siteMeta";
+import {
+  createAuthoritySourceMentions,
+  createXizhiPlaceJsonLd,
+  serializeJsonLd,
+  siteMeta,
+} from "../data/siteMeta";
 import "./globals.css";
 
 export const metadata = {
@@ -37,6 +42,8 @@ export default function RootLayout({ children }) {
     url: siteMeta.siteUrl,
     description: siteMeta.description,
     inLanguage: "zh-Hant-TW",
+    about: createXizhiPlaceJsonLd(),
+    mentions: createAuthoritySourceMentions(),
     publisher: {
       "@type": "Organization",
       name: siteMeta.name,

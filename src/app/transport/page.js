@@ -4,6 +4,7 @@ import InfoCard from "../../components/InfoCard";
 import { pageFaqs } from "../../data/faqData";
 import { commuteOptions, stationData, trafficNotes } from "../../data/transportData";
 import {
+  authoritySourceSets,
   createArticleJsonLd,
   createFaqJsonLd,
   serializeJsonLd,
@@ -28,6 +29,7 @@ export default function TransportPage() {
       description: summary,
       path: "/transport",
       section: "汐止交通",
+      sourceIds: authoritySourceSets.transport,
     }),
     createFaqJsonLd(pageFaqs.transport, "/transport"),
   ];

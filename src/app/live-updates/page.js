@@ -1,15 +1,23 @@
 import AuthorityFeed from "../../components/AuthorityFeed";
 import { authoritySources } from "../../data/liveUpdates";
+import {
+  createArticleJsonLd,
+  createAuthoritySourceItemListJsonLd,
+  serializeJsonLd,
+} from "../../data/siteMeta";
+
+const pageTitle = "汐止即時更新與官方來源";
+const pageDescription =
+  "整合汐止區公所、新北市政府、中央氣象署、臺鐵與公共交通等高權重官方網站資訊，提供汐止生活與通勤的即時查核入口。";
 
 export const metadata = {
-  title: "汐止即時更新與官方來源",
-  description:
-    "整合汐止區公所、新北市政府、中央氣象署、臺鐵與公共交通等高權重官方網站資訊，提供汐止生活與通勤的即時查核入口。",
+  title: pageTitle,
+  description: pageDescription,
   alternates: {
     canonical: "/live-updates",
   },
   openGraph: {
-    title: "汐止即時更新與官方來源",
+    title: pageTitle,
     description:
       "點開跑馬燈後可查看汐止在地官方公告、天氣、交通與公共服務來源。",
     url: "/live-updates",
@@ -17,8 +25,27 @@ export const metadata = {
 };
 
 export default function LiveUpdatesPage() {
+  const jsonLd = [
+    createArticleJsonLd({
+      title: pageTitle,
+      description: pageDescription,
+      path: "/live-updates",
+      section: "官方來源",
+    }),
+    createAuthoritySourceItemListJsonLd({
+      name: "汐止官方資訊來源清單",
+      description: "汐止生活資訊網站用來查核公告、天氣、交通與公共服務的官方來源。",
+      path: "/live-updates",
+    }),
+  ];
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
+      />
+
       <section className="grid gap-6 rounded-lg border border-emerald-100 bg-white p-6 shadow-sm lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
         <div>
           <p className="text-sm font-semibold text-emerald-700">Official live updates</p>
