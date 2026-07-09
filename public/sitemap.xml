@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://xizhi-life-info.vercel.app/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/" />
@@ -13,7 +13,7 @@
 
   <url>
     <loc>https://xizhi-life-info.vercel.app/about-xizhi</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/about-xizhi" />
@@ -22,7 +22,7 @@
 
   <url>
     <loc>https://xizhi-life-info.vercel.app/food</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/food" />
@@ -31,7 +31,7 @@
 
   <url>
     <loc>https://xizhi-life-info.vercel.app/transport</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/transport" />
@@ -40,7 +40,7 @@
 
   <url>
     <loc>https://xizhi-life-info.vercel.app/attractions</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/attractions" />
@@ -49,7 +49,7 @@
 
   <url>
     <loc>https://xizhi-life-info.vercel.app/living</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/living" />
@@ -58,7 +58,7 @@
 
   <url>
     <loc>https://xizhi-life-info.vercel.app/faq</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/faq" />
@@ -67,7 +67,7 @@
 
   <url>
     <loc>https://xizhi-life-info.vercel.app/live-updates</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/live-updates" />
@@ -76,7 +76,7 @@
 
   <url>
     <loc>https://xizhi-life-info.vercel.app/llms.txt</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://xizhi-life-info.vercel.app/llms.txt" />
